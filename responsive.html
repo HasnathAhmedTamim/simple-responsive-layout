@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
+    <style>
+        body{
+            border: 1px solid salmon;
+            max-width: 1124px;
+            margin: 0 auto;
+
+        }
+        .img-cont{
+            display: flex;
+            
+        }
+        .img-cont img{
+            width: 100%;
+        }
+         .img-cont div{
+            width: 100%;
+        }
+        @media screen and (max-width:576px){
+            .img-cont{
+                flex-direction: column-reverse;
+            }
+            .img-cont div{
+            width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Responsive Website</h1>
+        <ol>
+            <li>ViewPort Meta Tag</li>
+            <li>Css Relative unit</li>
+            <li>Body Max Width and hr center align</li>
+            <li>image fluid</li>
+            <li>two column flex and use media query with flex direction col</li>
+            <li>multi col</li>
+            <li>menu resoponsive:will need JS</li>
+        </ol>
+    </header>
+
+    <div class="img-cont">
+        <div>
+            <img src="images/tiger-close-up-pc-1600x900.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/Fruits-Healthy-201709.jpg" alt="">
+        </div>
+    </div>
 </body>
 </html>
