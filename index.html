@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Responsive layout</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .container {
+        border: 1px solid salmon;
+        display: flex;
+        /* justify-content: space-around;
+            align-items: center; */
+        flex-direction: row-reverse;
+        height: 250px;
+        flex-wrap: wrap;
+      }
+      .box {
+        border: 2px salmon dashed;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Layout</h1>
+    <div class="container">
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-4</div>
+      <div class="box">box-5</div>
+      <div class="box">box-6</div>
+      <div class="box">box-7</div>
+      <div class="box">box-8</div>
+      <div class="box">box-9</div>
+    </div>
+  </body>
 </html>
